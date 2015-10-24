@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#header {
+    
+    color:White;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    !--background-color:#DCDCDC;
+    color:White;
+    height:500px;
+    width:50px;
+    float:left;
+    padding:5px;	      
+}
+#section {
+    color:white;
+    width:100px;
+    float:left;
+    padding:10px;	 	 
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+</style>
+</head>
+
+<body>
+<body background="bookback.png">
+
+<div id="header">
+<h1><b><strong>Book Gallery</strong></b></h1>
+</div>
+
+
+<div id="nav" style="margin-left: 10%">
+ <a href="index.html" style="color:White">HOME</a>
+<h2 style="color:White" align="right">GENRES</h2>
+<a href="https://www.goodreads.com/shelf/show/science" style="color:white">Science</a><br>
+<a href="https://www.goodreads.com/shelf/show/fiction" style="color:white">fiction</a><br>
+<a href="https://www.goodreads.com/shelf/show/satire" style="color:white">Satire</a><br>
+
+<a href="https://www.goodreads.com/shelf/show/drama" style="color:white">Drama</a><br>
+
+<a href="https://www.goodreads.com/shelf/show/action" style="color:white">Action</a><br>
+
+<a href="https://www.goodreads.com/shelf/show/adventure" style="color:white">Adventure</a><br>
+<a href="https://www.goodreads.com/shelf/show/romance" style="color:white">Romance</a><br>
+<a href="https://www.goodreads.com/shelf/show/mystery" style="color:white">Mystery</a><br>
+<a href="https://www.goodreads.com/shelf/show/horror" style="color:white">Horror</a><br>
+<a href="https://www.goodreads.com/shelf/show/space-exploration" style="color:white">Space</a><br>
+
+<a href="https://www.goodreads.com/shelf/show/self-help" style="color:white">selfhelp</a><br>
+
+<a href="https://www.goodreads.com/shelf/show/travel" style="color:white">Travel</a><br>
+
+<a href="http://www.scholastic.com/100books/" style="color:white">Children</a><br>
+<a href="https://www.goodreads.com/shelf/show/religion" style="color:white">Religious</a><br>
+<a href="https://www.goodreads.com/list/tag/history" style="color:white">History</a><br>
+
+<a href="http://www.goodreads.com/list/show/8231.Best_Books_About_Mathematics" style="color:white">Math</a><br>
+
+
+</div>
+
+<div id="section">
+
+
+</div>
+<div id="section">
+
+
+</div>
+
+<div id="section">
+<script language="JavaScript">
+var i = 0;
+var path = new Array();
+ 
+// LIST OF IMAGES
+path[0] = "images1.jpeg";
+path[1] = "image2.jpeg";
+path[2] = "image3.jpeg";
+path[3] = "image4.jpeg";
+path[4] = "image5.jpeg";
+path[5] = "image6.png";
+path[6] = "image7.jpeg";
+path[7] = "image8.jpeg";
+path[8] = "image9.jpeg";
+path[9] = "image10.jpeg";
+path[10] = "image11.jpeg";
+path[11] = "image12.jpeg";
+path[12] = "image13.jpeg";
+path[13] = "image14.jpeg";
+path[14] = "image15.jpeg";
+path[15] = "image16.jpeg";
+
+
+function swapImage()
+{
+   document.slide.src = path[i];
+   if(i < path.length - 1) i++; else i = 0;
+   setTimeout("swapImage()",3000);
+}
+window.onload=swapImage;
+</script>
+<img height="700" name="slide" src="image_1.gif" width="600" />
+
+</div>
+
+
+</body>
+</html>
